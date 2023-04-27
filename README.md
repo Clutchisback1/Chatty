@@ -28,7 +28,7 @@ A Command-Line ChatGPT tool written with Hackers in mind!
 
 ### TLDR;
 
-* Generate and add your API Key to the paramter in this script
+* Generate and add your API Key to the paramter in Chatty.py
 * If you get errors saying you reached your limit you have to add a payment method
   * Shit's super cheap...While developing this I sent quite a few request and it only cost a penny by the time this app was finished...Took a day to write
 * Once you have your API key added you should be good to proceed like normal
