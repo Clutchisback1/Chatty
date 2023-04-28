@@ -27,6 +27,9 @@ import argparse
 import warnings
 from colorama.colorama_bin import just_fix_windows_console, Fore, Back, Style
 
+# API Key - See steps above to generate yours
+API_KEY = 'ENTER YOUR API KEY HERE'
+openai.api_key = API_KEY
 
 # Argument Variables
 parser = argparse.ArgumentParser()
@@ -51,17 +54,10 @@ def banner():
 '''
 
   # Assign Help Menu to Variable and colorize banner output
-  
   print(Fore.LIGHTYELLOW_EX + str(varbanner))
-  #print(Style.NORMAL + str(parser.print_help()))
-  
-
-varhelpmenu = parser.print_help()
 
 
-# API Key - See steps above to generate yours
-API_KEY = 'ADD YOUR API KEY HERE'
-openai.api_key = API_KEY
+#varhelpmenu = parser.print_help
 
 
 # Chat GPT API Call and Output 
@@ -75,9 +71,11 @@ def gpt_output():
   message = response.choices[0]['message']
   print("{}: {}".format(message['role'], message['content']))
 
+
+
 # No input handling
 if varquery == None or varquery == '':
-  banner() ; Fore.RESET + str(varhelpmenu)
+  banner() ; str(parser.print_help())
 else:
   # Print Chat GPT Output
   gpt_output()
