@@ -102,7 +102,7 @@ options:
 ```
 1st! For Jesus and His work in my life! So blessed to have met the individuals below:
 
-Sweetroll - Podcast days and lifetime brother
+ Sweetroll - Podcast days and lifetime brother
  Poncho - My Diet Elon Musk and Death Metal recognition 
  Wraiith75 - For being the example of giving back during his OSCP journey 
  Hexcartel - Teaching me the way and for always presenting opportunities of a lifetime
