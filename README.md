@@ -54,6 +54,7 @@ A Command-Line ChatGPT tool written with Hackers in mind!
 
 # Usage Instructions 🛠️
 
+```
    ___  _             _    _          
   / __\| |__    __ _ | |_ | |_  _   _ 
  / /   | '_ \  / _` || __|| __|| | | |
@@ -70,25 +71,26 @@ options:
   -o OUTFILE, --output OUTFILE
                         Use -o to output to a file
   -s, --session         Use -s to begin a chat session with ChatGpt
-
+```
 
 ---
 
 
 # Special Thanks! (Growing List)
 
-> Sweetroll - Podcast days and lifetime brother
-> Poncho - My Diet Elon Musk and Death Metal recognition 
-> Wraiith75 - For being the example of giving back during his OSCP journey 
-> Hexcartel - Teaching me the way and for always presenting opportunities of a lifetime
-> Radioboy - FISH, ssh -XD, Denhac and for demonstrating the meaning of being a hacker vs a security professional
-> Ch33z_plz - For challenging me, hand holding me, and forcing me to learn! One of my greatest mentors!
-> T0w3nTum - Where's Wald0??? days
-> DrRayke & Kevin - Always pushing the envelope, training like goku and vegeta, and rediness to teach
-> N00py - For allowing me to bring people together on his platform and supporting Coalcast
-> Anans3 & Dzolali - For Being Dynamic! 
-> Broan - For teaching me Certificate Attacks and getting me Domain Admin everytime I've reached out to him
-> Disc0rdantMel0dy - For being supportive of me taking a dump on someones front lawn (figuratively of course 😑)
-> Gh0st - For Alignment with key stakeholders and completing Q4 his objectives 🤣 - One of the smartest people I know!
-> Oomami - For supporting me in all areas of life - "Nah Nah Nah...."!
-
+```
+ Sweetroll - Podcast days and lifetime brother
+ Poncho - My Diet Elon Musk and Death Metal recognition 
+ Wraiith75 - For being the example of giving back during his OSCP journey 
+ Hexcartel - Teaching me the way and for always presenting opportunities of a lifetime
+ Radioboy - FISH, ssh -XD, Denhac and for demonstrating the meaning of being a hacker vs a security professional
+ Ch33z_plz - For challenging me, hand holding me, and forcing me to learn! One of my greatest mentors!
+ T0w3nTum - Where's Wald0??? days
+ DrRayke & Kevin - Always pushing the envelope, training like goku and vegeta, and rediness to teach
+ N00py - For allowing me to bring people together on his platform and supporting Coalcast
+ Anans3 & Dzolali - For Being Dynamic! 
+ Broan - For teaching me Certificate Attacks and getting me Domain Admin everytime I've reached out to him
+ Disc0rdantMel0dy - For being supportive of me taking a dump on someones front lawn (figuratively of course 😑)
+ Gh0st - For Alignment with key stakeholders and completing Q4 his objectives 🤣 - One of the smartest people I know!
+ Oomami - For supporting me in all areas of life - "Nah Nah Nah...."!
+```
