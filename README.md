@@ -23,7 +23,7 @@ A Command-Line ChatGPT tool written with Hackers in mind!
 
 
 
-# Instructions 📝
+# Installation Instructions 📝
 
 
 ### TLDR;
@@ -52,7 +52,7 @@ A Command-Line ChatGPT tool written with Hackers in mind!
 
 ---
 
-# Usage Instructions 🛠️
+# Usage 🛠️
 
 ```
    ___  _             _    _          
