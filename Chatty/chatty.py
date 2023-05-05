@@ -1,3 +1,7 @@
+# Twitter: Clutchisback1
+# Blog: https://H4cklife.org
+
+
 ### TLDR;
 
 # Generate and add your API Key to the paramter in this script
@@ -24,25 +28,33 @@
 
 import openai
 import argparse
-import warnings
-from colorama.colorama_bin import just_fix_windows_console, Fore, Back, Style
+from colorama.colorama_bin import just_fix_windows_console, Fore
+from time import sleep
+from progress.spinner import MoonSpinner
+
+
 
 # API Key - See steps above to generate yours
 API_KEY = 'ENTER YOUR API KEY HERE'
 openai.api_key = API_KEY
 
+
 # Argument Variables
 parser = argparse.ArgumentParser()
 parser.add_argument('-q', '--query', help='Use -q to ask ChatGPT a question', dest='query')
+parser.add_argument('-o', '--output', help='Use -f to output to a file', dest='outfile')
+parser.add_argument('-s', '--session', help='Use -s to begin a chat session with ChatGpt', dest='session', action='store_true')
 args = parser.parse_args()
-
 
 # Argument Mapping
 varquery = args.query
+ouptut_file = args.outfile
+convo = args.session
+ 
+
 
 
 # Banner with Color
-
 def banner():
   varbanner = '''
    ___  _             _    _          
@@ -57,7 +69,12 @@ def banner():
   print(Fore.LIGHTYELLOW_EX + str(varbanner))
 
 
-#varhelpmenu = parser.print_help
+# Loading Bar
+def loadingbar2():
+  with MoonSpinner('Processing…') as bar:
+    for i in range(100):
+        sleep(0.07)
+        bar.next()
 
 
 # Chat GPT API Call and Output 
@@ -68,21 +85,55 @@ def gpt_output():
         {"role": "user", "content": str(varquery)}
           ]
       )
+
+  # Assigns Ouput to a Variable
   message = response.choices[0]['message']
-  print("{}: {}".format(message['role'], message['content']))
+  output = str(message['content'])
+  
+  # No input handling
+  if varquery == None and convo == None or varquery == '' and convo == None:
+    banner() ; str(parser.print_help())
+
+  # Write output to file and print content
+  elif bool(ouptut_file) == True:
+    loadingbar2()
+    with open(ouptut_file, 'w') as file:
+      print(Fore.LIGHTBLUE_EX + '😈 Chatty: ' + output + ' 📢')
+      file.write(output)
+ 
+
+ # Session Logic
+  elif bool(convo) == True:
+    while bool(convo) == True:
+      session_query = input('Ask ChatGPT a Question! ')
+
+      # New ChatGPT Input Source
+      response = openai.ChatCompletion.create(
+      model="gpt-3.5-turbo",
+      messages=[
+          {"role": "user", "content": str(session_query)}
+            ]
+          )
+  # Assigns Ouput to a Variable
+      message = response.choices[0]['message']
+      session_output = str(message['content'])
+      
+      loadingbar2()
+      # Feel free to customize your Prompt a bit!
+      print(Fore.LIGHTBLUE_EX + '😈 Chatty: ' + session_output + ' 📢')
+  else:
+    loadingbar2()
+    # Feel free to customize your Prompt a bit!
+    print(Fore.LIGHTBLUE_EX + '😈 Chatty: ' + output + ' 📢')
 
 
+# Execute!!!
+gpt_output()
 
-# No input handling
-if varquery == None or varquery == '':
-  banner() ; str(parser.print_help())
-else:
-  # Print Chat GPT Output
-  gpt_output()
 
 
 #  ________________________
-# < A1 CH1PS 1N Y0Ur 8r41N >
+# < A1 Ch1pZ 1n Y3r 8r41n >
 #  ------------------------
 #    \      {
 #     \  }   }   {
@@ -101,3 +152,6 @@ else:
 #    |            (  /
 #    \             y'
 #     `-.._____..-'
+#
+#
+
