@@ -3,8 +3,29 @@ A Command-Line ChatGPT tool written with Hackers in mind!
 
 
 ```
+ ________________________________
+/ Second release of Chatty! I    \
+| added a session feature that   |
+| let's you have a conversation  |
+| with ChatGPT if you want a     |
+| back and forth. I also added a |
+| processing bar and some other  |
+\ house keeping things! Enjoy!   /
+ --------------------------------
+         \
+          \
+               ,.-----__
+            ,:::://///,:::-.
+           /:''/////// ``:::`;/|/
+          /'   ||||||     :://'`\
+        .' ,   ||||||     `/(  e \
+  -===~__-'\__X_`````\_____/~`-._ `.
+              ~~        ~~       `~-'
+
+----
+
  _____________________________
-/ First release of Chatty!    \
+/ Second release of Chatty!    \
 | Figured this was a good     |
 | starting point. Expect more |
 \ features soon!   ggs!       /
