@@ -67,7 +67,7 @@
 ----
 
  _____________________________
-/ Second release of Chatty!    \
+/ First release of Chatty!    \
 | Figured this was a good     |
 | starting point. Expect more |
 \ features soon!   ggs!       /
