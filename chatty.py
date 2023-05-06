@@ -173,7 +173,7 @@ gpt_output()
 #  DrRayke & Kevin - Always pushing the envelope, training like Goku and Vegeta, and readiness to teach
 #  N00py - For allowing me to bring people together on his platform and supporting Coalcast
 #  Anans3 & Dzolali - For Being Dynamic!
-#  Reich - "Hey Guys!?"
+#  DR - "Hey Guys!?" 💁🏼‍♂️ 💁🏼‍♀️ - For supporting myself and so many others create a better future for their families
 #  Broan - For teaching me Certificate Attacks and getting me Domain Admin everytime I've reached out to him
 #  Disc0rdantMel0dy - For being supportive of me taking a dump on someones front lawn (figuratively of course 😑)
 #  Gh0st - For Alignment with key stakeholders and completing Q4 his objectives 🤣 - One of the smartest people I know!
